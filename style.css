@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-body{
-    background-color: #0E1117;
-    padding: 30px;
 
+body{
+    background-color: #000000;
+    padding: 30px;
+    
+  
+}
+h2{
+    color: #9ec5f4;
+    font-family: 'montserrat', sans-serif;
+    padding: 10px 10px 40px 5px;
+    font-size: 20px;
+    font-weight:200;
+    letter-spacing: 3px;
 }
 
-.number{
+.number-one{
     border-radius: 10px;
     margin: 10px;
     height: 250px;
@@ -87,4 +98,134 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
 .number-one form input[type=radio]:checked + label::before{
     border: 9px solid #fff;
    
+}
+
+
+.number-two{
+    border: 1PX SOLID #fff;
+    margin-top: 150px;
+    width: 100%;
+    min-height: 300px;
+
+}
+.number-two .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.number-two .container .box{
+    border: 0.5PX SOLID  #9ec5f4;
+    
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+    padding: 0px;
+    position: relative;
+    
+
+}
+.box h3{
+    color: #9ec5f4;
+    font-family: roboto;
+    font-weight: 300;
+    margin: 15px 20px 0 20px;
+
+
+}
+.box h4{
+    color: #9ec5f487;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 19px;
+
+
+
+
+}
+.box h6{
+    color: #9ec5f4d2;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+    position: absolute;
+    bottom:20px;
+    
+
+
+
+}
+.box input[type=radio]{
+    display: none;
+    position: absolute;
+    right: 0;
+}
+.box label::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border: 1PX SOLID  #9ec5f4;
+    border-radius: 50%;
+
+}
+
+
+.box label{
+    position: absolute;
+    display: block;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+
+}
+
+
+.box input[type=radio]:checked + label::before{
+    border: 6.5PX SOLID  #ffffff;
+    
+}
+.box input[type=radio]:checked ~ h3{
+    color: #fff;
+    
+}
+.box input[type=radio]:checked ~ h4{
+    color: #fff;
+    
+}
+.box input[type=radio]:checked ~ h6{
+    color: #fff;
+    
+}
+.box.checked {
+    
+
+
+
+    background: rgba(113, 145, 255, 0.19);
+    
+    
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 2px solid rgba(0, 51, 218, 0.91);
+    
+    box-shadow: rgba(255, 255, 255, 0.272) 0px 0px 10px 0px, rgba(255, 255, 255, 0.318) -0px -0px 10px 0px;
+
+
+
+
+
+
+
+    
 }

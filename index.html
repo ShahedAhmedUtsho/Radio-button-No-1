@@ -8,8 +8,15 @@
 
 </head>
 <body>
+   
+
+    
+   
     <div class="number number-one">
+        
+        <h2> Payment Method:</h2>
         <form action="get">
+            
             <input type="radio" id="card" name="pay" checked>
             <label for="card" >Card</label>
             <input type="radio" id="cash" name="pay">
@@ -18,7 +25,74 @@
         </form>
 
     </div>
+    <div class="number number-two">
+        <h2> Delivery method:</h2>
+        <form class="container" action="get">
+            <div class="box box1 checked">
+                <input type="radio" id="st" name="Delivery"  onclick="changeParentColor(this)"      checked>
+                <label for="st" ></label>
+                <h3>Standard</h3>
+                <h4>
+                    4 - 10 business days
+                </h4>
+                <h6>
+                $5.00
+                </h6>
+
+
+            </div>
+            <div class="box box2">
+                <input type="radio" id="ex" name="Delivery"   onclick="changeParentColor(this)"       >
+                <label for="ex" ></label>
+                <h3>Standard</h3>
+                <h4>
+                    2 - 5 business days
+                </h4>
+                <h6>
+                    $16.00
+                </h6>
+
+            </div>
+            <div class="box box3">
+                <input type="radio" id="su" name="Delivery"  onclick="changeParentColor(this)"    >
+                <label for="su" ></label>
+                <h3>Standard</h3>
+                <h4>
+                    1 business day
+                </h4>
+                <h6>
+                    $25.00
+                </h6>
+
+            </div>
+
+
+
+
+
+        </form>
+
+        
+
+    </div>
+
+
+
     
+    <script>
+        function changeParentColor(element) {
+            var parent = element.closest('.box');
+            
+            // Remove 'checked' class from all parents
+            var allParents = document.querySelectorAll('.box');
+            allParents.forEach(function(item) {
+                item.classList.remove('checked');
+            });
+            
+            // Add 'checked' class to the parent of the clicked radio
+            parent.classList.add('checked');
+        }
+    </script>
     
 </body>
 </html>
