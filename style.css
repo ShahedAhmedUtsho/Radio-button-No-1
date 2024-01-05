@@ -8,9 +8,14 @@
 
 body{
     background-color: #000000;
-    padding: 30px;
+    padding: 20px;
     
   
+}
+main{
+    max-width: 1200px;
+    /* border: 1px solid #fff; */
+    margin: auto;
 }
 h2{
     color: #9ec5f4;
@@ -22,6 +27,7 @@ h2{
 }
 
 .number-one{
+   
     border-radius: 10px;
     margin: 10px;
     height: 250px;
@@ -48,9 +54,9 @@ border-radius: 20px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(3.7px);
 -webkit-backdrop-filter: blur(3.7px);
-border: 3px solid rgba(113, 145, 255, 0.91);
+border: 2px solid #9ec5f4;
 
-box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8) -0px -0px 5px 0px;
+box-shadow: rgba(255, 255, 255, 0.52) 0px 0px 20px 0px, rgba(255, 255, 255, 0.594) -0px -0px 5px 0px;
 
 
 }
@@ -232,3 +238,257 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
 
     
 }
+
+
+
+@media only screen and (max-width: 950px) {
+
+
+
+
+    .number-two .container{
+        display: grid;;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        
+    }
+    .number-two .container .box{
+        border: 0.5PX SOLID  #9ec5f4;
+      
+       
+        width: auto;
+        height: 130px;
+       
+        
+    
+    }
+
+
+    .box h3{
+        margin-left: 12px;
+       font-size: 17px;
+       
+        
+    
+    }
+    .box h4{
+        
+        margin-top: 8px;
+        margin-left: 12px;
+        font-size: 15px;
+    
+    
+    
+    
+    }
+    .box h6{
+        margin-left: 12px;
+        font-size: 20px;
+        bottom:15px;
+        
+    
+    }
+
+
+    .box label::before{
+      
+        right: 22px;
+        top: 18px;
+       
+        width: 22px;
+        height: 22px;
+        
+      
+    
+    }
+
+
+
+
+
+    
+  }
+  @media only screen and (max-width: 800px){
+
+
+
+    .number-one{
+   
+        
+        height: 300px;
+        width: 100%;
+        
+        margin: auto;
+    
+    }
+    .number-one form{
+        flex-direction: column;
+        gap: 20px;
+        
+        
+    }
+
+    .number-one form label{
+        position: relative;
+        display: inline-block;
+        border: 1px solid #56c4ff3b;
+        padding: auto;
+       display: flex;
+       
+       align-items: center;
+        font-size: 20px;
+       width: 80%;
+       height: 70px;
+       
+        
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .number-two .container{
+       
+        grid-template-columns: 1fr;
+        gap: 20px;
+        
+    }
+    .number-two .container .box{
+        border: 0.5PX SOLID  #9ec5f4;
+      
+       
+        width: auto;
+        height: 150px;
+       
+        
+    
+    }
+
+
+    .box h3{
+        margin-left: 20px;
+       font-size: 20px;
+       
+        
+    
+    }
+    .box h4{
+        
+        margin-top: 8px;
+        margin-left: 20px;
+        font-size: 18px;
+    
+    
+    
+    
+    }
+    .box h6{
+        margin-left: 20px;
+        font-size: 25px;
+        bottom:15px;
+        
+    
+    }
+
+
+    .box label::before{
+      
+        width: 25px;
+        height: 25px;
+        
+      
+    
+    }
+
+
+
+
+
+  }
+
+
+
+  @media only screen and (max-width: 590px) {
+    h2{
+        padding: 10px 10px 30px 5px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .number-two{
+       
+        margin-top: 120px;
+       
+    
+    }
+    .number-one{
+        
+        height: 150px;
+    
+    }
+    .number-one form{
+        flex-direction: row;
+        gap: 15px;
+        
+border: 0.5px solid rgba(86, 105, 168, 0.75);
+
+
+        background: rgba(113, 145, 255, 0.19);
+    
+    
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 0.5PX SOLID  #9ec5f4;
+    
+    box-shadow: rgba(255, 255, 255, 0.063) 0px 0px 10px 0px, rgba(255, 255, 255, 0.11) -0px -0px 10px 0px;
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+    
+    .number-one form label{
+       
+       
+     
+        font-size: 16px;
+       width: auto;
+       height: auto;
+       padding: 18px 25px 18px 70px;
+       
+        
+        
+    }
+
+
+
+
+    
+  }
+
+
+
+
+
+
+
+
+  
