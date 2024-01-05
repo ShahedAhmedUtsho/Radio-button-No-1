@@ -102,7 +102,7 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
 
 
 .number-two{
-    border: 1PX SOLID #fff;
+    /* border: 1PX SOLID #fff; */
     margin-top: 150px;
     width: 100%;
     min-height: 300px;
@@ -116,6 +116,7 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
 }
 .number-two .container .box{
     border: 0.5PX SOLID  #9ec5f4;
+   
     
     width: 280px;
     height: 160px;
@@ -130,7 +131,9 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
     font-family: roboto;
     font-weight: 300;
     margin: 15px 20px 0 20px;
-
+    -webkit-transition: all 0.1s linear;
+   
+    
 
 }
 .box h4{
@@ -210,7 +213,7 @@ box-shadow: rgba(255, 255, 255, 0.48) 0px 0px 20px 0px, rgba(255, 255, 255, 0.8)
 .box.checked {
     
 
-
+    
 
     background: rgba(113, 145, 255, 0.19);
     
